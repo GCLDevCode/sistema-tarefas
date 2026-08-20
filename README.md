@@ -1,89 +1,73 @@
-Sistema Web de Gestão de Tarefas
-Descrição
+# Sistema Web de Gestão de Tarefas
 
-Este projeto corresponde à estrutura inicial de um Sistema Web de Gestão de Tarefas desenvolvido na disciplina de Laboratório de Programação Back-End.
+## Descrição
 
-O objetivo desta etapa é criar uma base reproduzível para o projeto, contendo ambiente virtual Python, gerenciamento de dependências, documentação básica e controle de versão com Git.
+Projeto desenvolvido na disciplina de Laboratório de Programação Back-End.
 
-Objetivos da atividade
-Criar a estrutura inicial do projeto.
-Configurar um ambiente virtual Python.
-Instalar e registrar dependências.
-Utilizar controle de versão com Git.
-Documentar o processo de execução do sistema.
-Tecnologias utilizadas
-Python 3
-Git
-Ambiente Virtual (venv)
-Biblioteca Requests
-Estrutura do projeto
-sistema-tarefas/
-├── .gitignore
-├── README.md
-├── main.py
-├── requirements.txt
-└── .venv/
-Arquivos
+O sistema foi criado em Python e possui atividades realizadas ao longo das semanas da disciplina, utilizando Git para controle de versão.
 
-main.py
+## Tecnologias Utilizadas
 
-Arquivo principal da aplicação.
-Exibe a mensagem inicial do sistema.
+- Python 3
+- Git
+- Ambiente Virtual (venv)
+- Requests
 
-requirements.txt
+## Arquivos do Projeto
 
-Lista as dependências instaladas no projeto.
-Permite recriar o ambiente em outro computador.
+- `main.py` - Exibe a mensagem inicial do sistema.
+- `cadastro_tarefa.py` - Cadastro de tarefas utilizando entrada de dados e operadores.
+- `menu_tarefas.py` - Menu para cadastrar, listar e concluir tarefas.
+- `requirements.txt` - Dependências do projeto.
+- `README.md` - Documentação do projeto.
 
-.gitignore
+## Como Executar
 
-Define arquivos e pastas que não devem ser versionados pelo Git.
-Neste projeto, a pasta .venv é ignorada.
+Ativar o ambiente virtual:
 
-README.md
-
-Documento com informações sobre o projeto e instruções de execução.
-Pré-requisitos
-
-Antes de executar o projeto, é necessário possuir:
-
-Python 3 instalado.
-Git instalado (opcional para controle de versão).
-Terminal ou prompt de comando.
-Configuração do ambiente virtual
-
-Criar o ambiente virtual:
-
-python -m venv .venv
-Ativação no Windows
+```bash
 .venv\Scripts\activate
-Ativação no Linux/macOS
-source .venv/bin/activate
-Instalação das dependências
+```
 
-Com o ambiente virtual ativado:
+Instalar as dependências:
 
+```bash
 pip install -r requirements.txt
-Execução do projeto
+```
 
-Execute o arquivo principal:
+Executar o programa principal:
 
+```bash
 python main.py
+```
 
-Saída esperada:
+Executar o cadastro de tarefas:
 
-Sistema Web de Gestão de Tarefas
-Controle de versão
+```bash
+python cadastro_tarefa.py
+```
 
-Inicialização do repositório Git:
+Executar o menu de tarefas:
 
-git init
-git add .
-git commit -m "Cria estrutura inicial do projeto"
-Autor
+```bash
+python menu_tarefas.py
+```
+
+## Menu de Tarefas
+
+O arquivo `menu_tarefas.py` possui as seguintes opções:
+
+1. Cadastrar tarefa
+2. Listar tarefas
+3. Atualizar situação de uma tarefa
+4. Encerrar sistema
+
+## Limitação
+
+As tarefas são armazenadas apenas durante a execução do programa.
+
+Ao fechar o sistema, os dados cadastrados são perdidos.
+
+## Autor
 
 Guilherme
-
-Observações
-
-Este projeto representa a primeira etapa do desenvolvimento do Sistema Web de Gestão de Tarefas e será expandido ao longo das próximas aulas da disciplina.
